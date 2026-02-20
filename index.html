@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanimozhi | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0c29;
+background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
+color:white;
+overflow-x:hidden;
+}
+
+/* Animated background circles */
+body::before, body::after{
+content:"";
+position:fixed;
+width:300px;
+height:300px;
+border-radius:50%;
+background:rgba(56,189,248,0.2);
+filter:blur(100px);
+z-index:-1;
+animation:float 6s infinite alternate;
+}
+
+body::after{
+right:10%;
+bottom:10%;
+animation-delay:3s;
+}
+
+@keyframes float{
+from{transform:translateY(-30px);}
+to{transform:translateY(30px);}
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:fixed;
+width:100%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:0 8%;
+}
+
+.hero-text h1{
+font-size:48px;
+}
+
+.typing{
+color:#38bdf8;
+font-weight:600;
+}
+
+.hero-text p{
+margin:20px 0;
+opacity:0.8;
+}
+
+.btn{
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:25px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.hero img{
+width:270px;
+height:270px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid rgba(255,255,255,0.2);
+box-shadow:0 0 40px #38bdf8;
+}
+
+/* SECTION */
+section{
+padding:100px 8%;
+}
+
+.section-title{
+font-size:35px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+/* GLASS CARD */
+.glass{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 8px 32px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+.glass:hover{
+transform:translateY(-10px);
+}
+
+/* SKILLS */
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+.skill-box{
+text-align:center;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.skill-box:hover{
+background:#38bdf8;
+color:black;
+transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:rgba(255,255,255,0.05);
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+margin-top:80px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Kanimozhi.</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-text">
+<h1>Hi, I'm Kanimozhi</h1>
+<h2 class="typing">Web Developer</h2>
+<p>Building modern, innovative & user-friendly digital experiences.</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+<img src="kanimozhi photo.jpeg" alt="Kanimozhi Photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="glass">
+<p>g
+Passionate developer focused on crafting clean UI designs and powerful web applications. 
+I love innovation, creativity, and solving real-world problems using technology.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="skills">
+<div class="skill-box">HTML</div>
+<div class="skill-box">CSS</div>
+<div class="skill-box">JavaScript</div>
+<div class="skill-box">React</div>
+<div class="skill-box">GitHub</div>
+<div class="skill-box">UI/UX</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<div class="glass contact">
+<p><strong>Phone:</strong> 8940013582</p>
+<p><strong>Email:</strong> kanimozhikarunanithikanimozhi@gmail.com</p>
+<p><strong>LinkedIn:</strong> 
+<a href="https://www.linkedin.com/in/kanimozhi-karunanithi-kanimozhi-132502375/" target="_blank">
+linkedin.com/in/kanimozhi
+</a>
+</p>
+<p><strong>GitHub:</strong> 
+<a href="https://github.com/Kanimozhi-0" target="_blank">
+github.com/Kanimozhi-0
+</a>
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Kanimozhi | Designed with Innovation ✨
+</footer>
+
+</body>
+</html>
